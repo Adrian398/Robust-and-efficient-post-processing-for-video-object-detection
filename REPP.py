@@ -102,7 +102,6 @@ class REPP():
         
         pairs, unmatched_pairs = [], []
         for i in range(num_frames - 1):
-            
             pairs_i = []
             frame_1, frame_2 = frames[i], frames[i+1]
             preds_frame_1, preds_frame_2 = preds_frame[frame_1], preds_frame[frame_2]
@@ -263,13 +262,19 @@ class REPP():
         # Filter out low-score predictions
         for frame in video_predictions.keys():
             video_predictions[frame] = [ p for p in video_predictions[frame] if max(p['scores']) >= self.min_tubelet_score ]
-        
+
+
         video_predictions = dict(sorted(video_predictions.items()))
-        
+        print("--- %s seconds ---" % (time.time() - start_time))
         pairs, unmatched_pairs = self.get_video_pairs(video_predictions)
+        print("--- %s seconds ---" % (time.time() - start_time))
         tubelets = self.get_tubelets(video_predictions, pairs)
+        print("--- %s seconds ---" % (time.time() - start_time))
         
         tubelets = self.rescore_tubelets(tubelets)
+
+        for tub in tubelets:
+            print(len(tub))
         
         if self.recoordinate: tubelets = self.recoordinate_tubelets_full(tubelets)
         
@@ -315,13 +320,16 @@ if __name__ == '__main__':
 
     from tqdm import tqdm
     import sys
+    import time
     
     total_preds_coco, total_preds_imdb = [], []
     print(' * Applying repp')
+    start_time = time.time()
     if args.evaluate:
         with open(args.annotations_filename, 'r') as f: annotations = sorted(f.read().splitlines())
         pbar = tqdm(total=len(annotations), file=sys.stdout)
     for vid, video_preds in get_video_frame_iterator(args.predictions_file, from_python_2=args.from_python_2):
+        #print(video_preds)
         predictions_coco, predictions_imdb = repp(video_preds)
         total_preds_coco += predictions_coco
         total_preds_imdb += predictions_imdb
@@ -336,6 +344,7 @@ if __name__ == '__main__':
     if args.store_coco:
         print(' * Dumping predictions with the COCO format:', predictions_file_out + '_coco.json')
         json.dump(total_preds_coco, open(predictions_file_out + '_coco.json', 'w'))
+        print("--- %s seconds ---" % (time.time() - start_time))
 
 
     if args.evaluate:
