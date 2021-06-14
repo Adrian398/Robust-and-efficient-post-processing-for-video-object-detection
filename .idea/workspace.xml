@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c646e77-5edb-4ac2-a7b7-22587a7dbac1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/REPP.py" beforeDir="false" afterPath="$PROJECT_DIR$/REPP.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/REPP_cfg/yolo_repp_cfg.json" beforeDir="false" afterPath="$PROJECT_DIR$/REPP_cfg/yolo_repp_cfg.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repp_requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/repp_requirements.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,15 +12,18 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Robust_and_efficient_post_processing_for_video_object_detection$run.coverage" NAME="run Coverage Results" MODIFIED="1617640973450" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Robust_and_efficient_post_processing_for_video_object_detection$run.coverage" NAME="run Coverage Results" MODIFIED="1623688216491" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-639656657">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.6" value="2" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -55,8 +57,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/REPP.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="258" column="4" lean-forward="true" selection-start-line="258" selection-start-column="4" selection-end-line="258" selection-end-column="4" />
+            <state relative-caret-position="558">
+              <caret line="332" column="42" selection-start-line="332" selection-start-column="26" selection-end-line="332" selection-end-column="42" />
               <folding>
                 <element signature="e#112#125#0" expanded="true" />
               </folding>
@@ -107,17 +109,16 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="23" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="25" />
     <option name="width" value="1792" />
-    <option name="height" value="1097" />
+    <option name="height" value="1095" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -125,10 +126,16 @@
               <item name="Robust-and-efficient-post-processing-for-video-object-detection" type="b2602c69:ProjectViewProjectNode" />
               <item name="Robust-and-efficient-post-processing-for-video-object-detection" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Robust-and-efficient-post-processing-for-video-object-detection" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Robust-and-efficient-post-processing-for-video-object-detection" type="462c0819:PsiDirectoryNode" />
+              <item name="demos" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -210,15 +217,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1792" height="1097" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="25" width="1792" height="1095" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25257143" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26114285" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.18507463" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.18455367" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -245,8 +251,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/REPP.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="258" column="4" lean-forward="true" selection-start-line="258" selection-start-column="4" selection-end-line="258" selection-end-column="4" />
+        <state relative-caret-position="558">
+          <caret line="332" column="42" selection-start-line="332" selection-start-column="26" selection-end-line="332" selection-end-column="42" />
           <folding>
             <element signature="e#112#125#0" expanded="true" />
           </folding>

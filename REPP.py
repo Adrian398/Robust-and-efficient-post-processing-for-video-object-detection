@@ -329,7 +329,7 @@ if __name__ == '__main__':
         with open(args.annotations_filename, 'r') as f: annotations = sorted(f.read().splitlines())
         pbar = tqdm(total=len(annotations), file=sys.stdout)
     for vid, video_preds in get_video_frame_iterator(args.predictions_file, from_python_2=args.from_python_2):
-        #print(video_preds)
+        print(video_preds)
         predictions_coco, predictions_imdb = repp(video_preds)
         total_preds_coco += predictions_coco
         total_preds_imdb += predictions_imdb
